@@ -14,9 +14,10 @@ An open source web template is the perfect way to get started with your own webs
 <img src="src/assets/signup-sc.png" alt="Signup" title="Signup" />
 
 ## Author
+
 **Tuncay ÇAKMANUS**
 
-+ [Tuncay ÇAKMANUS](https://www.rudral.com)
++ [www.rudral.com](https://www.rudral.com)
 + [github/rudral](https://github.com/rudral)
 
 ## License

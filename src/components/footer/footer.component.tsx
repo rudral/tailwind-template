@@ -1,3 +1,4 @@
+import { baseRoute } from "../../main"
 import { YourLogo } from "../logo/your-logo.component"
 import { FooterLink } from "./footer-link.component"
 import { FooterNavItem } from "./footer-nav-item.component"
@@ -6,7 +7,7 @@ export const Footer = () => (
   <footer className="bg-primary text-white px-5 md:px-16 lg:px-36">
     <div className="py-10 flex flex-col md:flex-row items-start justify-between gap-2">
       <div className="flex flex-col items-start justify-center my-7">
-        <a href="https://www.rudral.com" target="_blank" title="Your logo">
+        <a href={`${baseRoute}/`} target="_blank" title="Your logo">
           <YourLogo isWhite />
         </a>
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 mt-3 md:gap-32">
@@ -47,11 +48,30 @@ export const Footer = () => (
             </div>
             <div className="flex w-1/3 flex-col items-start justify-center gap-2">
               <h6 className="font-lato text-lg whitespace-nowrap">Social</h6>
-              {["Twitter", "Github", "Stack Overflow", "LinkedIn"].map(
-                (item) => (
-                  <FooterNavItem key={item} text={item} />
-                )
-              )}
+              {[
+                {
+                  label: "Twitter",
+                  href: "https://twitter.com/rudral",
+                },
+                {
+                  label: "Github",
+                  href: "https://github.com/rudral",
+                },
+                {
+                  label: "Stack Overflow",
+                  href: "https://stackoverflow.com/users/732868/rudral",
+                },
+                {
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/rudral/",
+                },
+              ].map((item) => (
+                <FooterNavItem
+                  key={item.label}
+                  text={item.label}
+                  href={item.href}
+                />
+              ))}
             </div>
           </div>
         </div>

@@ -70,6 +70,7 @@ export const Footer = () => (
                   key={item.label}
                   text={item.label}
                   href={item.href}
+                  target="_blank"
                 />
               ))}
             </div>

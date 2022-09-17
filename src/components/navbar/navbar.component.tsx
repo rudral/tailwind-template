@@ -25,12 +25,12 @@ export const Navbar = () => {
       md:h-[90px] md:bg-white md:flex-row"
       >
         <div className="flex items-center justify-start md:hidden mt-2">
-          <a href="https://www.rudral.com" target="_blank" title="Your logo">
+          <a href={`${baseRoute}/`} target="_blank" title="Your logo">
             <YourLogo isWhite />
           </a>
         </div>
         <div className="w-1/3 hidden md:block">
-          <a href="https://www.rudral.com" target="_blank" title="Your logo">
+          <a href={`${baseRoute}/`} target="_blank" title="Your logo">
             <YourLogo />
           </a>
         </div>

@@ -33,7 +33,7 @@ export const LoginForm = () => {
     Swal.fire({
       icon: "success",
       title: "Login Successful",
-      text: `Welcome back! Please check the console.log.`,
+      text: `Welcome back! Please check console logs.`,
       confirmButtonText: "Ok!",
       footer:
         '<a href="https://www.rudral.com" target="_blank">👋Hey! Dont forget to visit my site👉 www.rudral.com</a>',
@@ -48,7 +48,12 @@ export const LoginForm = () => {
       md:shadow-lg md:w-auto md:px-24 md:py-20 md:mx-0"
     >
       <div className="flex flex-col items-center justify-start">
-        <h2 className="font-lato text-5xl">Best Login Form</h2>
+        <h2
+          className="font-lato text-4xl whitespace-nowrap
+        md:text-5xl"
+        >
+          Best Login Form
+        </h2>
         <div className="font-poppins font-normal text-sm text-gray-500 mt-2 mb-8">
           Super company caption here.
         </div>

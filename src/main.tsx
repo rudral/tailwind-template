@@ -12,7 +12,7 @@ export const baseRoute = "/tailwind-template"
 const Main = () => (
   <Layout>
     <a
-      className="github-fork-ribbon before:bg-secondary"
+      className="github-fork-ribbon before:bg-secondary z-50"
       href="https://github.com/rudral/tailwind-template"
       data-ribbon="Fork me on GitHub"
       title="Fork me on GitHub"

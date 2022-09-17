@@ -79,7 +79,7 @@ export const Footer = () => (
       </div>
     </div>
     <div
-      className="font-poppins bg-black/5 mx-5 rounded-t-2xl text-[11px] text-gray-300 flex flex-col  gap-2 items-center justify-center py-3
+      className="font-poppins bg-black/5 mx-0 rounded-t-2xl text-[10px] text-gray-300 flex flex-col gap-2 items-center justify-center py-3 whitespace-nowrap
     md:gap-0 md:flex-row md:text-xs md:mx-28"
     >
       <div>

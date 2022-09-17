@@ -7,6 +7,8 @@ import "./index.css"
 import { LoginPage } from "./pages/login.page"
 import { SingupPage } from "./pages/signup.page"
 
+export const baseRoute = "/tailwind-template"
+
 const Main = () => (
   <Layout>
     <a
@@ -19,8 +21,8 @@ const Main = () => (
       Fork me on GitHub
     </a>
     <Router>
-      <Route default path="/" component={LoginPage} />
-      <Route path="/signup" component={SingupPage} />
+      <Route default path={`${baseRoute}/`} component={LoginPage} />
+      <Route path={`${baseRoute}/signup`} component={SingupPage} />
     </Router>
   </Layout>
 )

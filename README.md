@@ -17,4 +17,4 @@ Live Demo: [https://rudral.github.io/tailwind-template/](https://rudral.github.i
 
 [MIT][mit-license]
 
-[mit-license]: ./LICENSE
+[mit-license]: ./LICENSE.md

@@ -1,24 +1,23 @@
-import { useEffect, useState } from "preact/hooks"
-
 import { Link } from "preact-router/match"
 
+import { baseRoute } from "../../main"
 import { YourLogo } from "../logo/your-logo.component"
 import { Search } from "./search.component"
 
-export const NAV_DATA = [
-  {
-    href: "/",
-    label: "Login ",
-    title: "Login to your account",
-  },
-  {
-    href: "/signup",
-    label: "Sign Up ",
-    title: "Register a new account",
-  },
-]
-
 export const Navbar = () => {
+  const NAV_DATA = [
+    {
+      href: `${baseRoute}/`,
+      label: "Login ",
+      title: "Login to your account",
+    },
+    {
+      href: `${baseRoute}/signup`,
+      label: "Sign Up ",
+      title: "Register a new account",
+    },
+  ]
+
   return (
     <>
       <nav
